@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import posts, candidates, booths
 
 class postsAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-    search_fields = ('title',)  
+    list_display = ('title','name')
+    search_fields = ('title','name')  
     filter_horizontal = ()
 
 class candidatesAdmin(admin.ModelAdmin):
